@@ -10,7 +10,7 @@ let computerScore = 0;
 for (i = 0; i < 1;) {
     let begin = prompt('Type "yes" if you would like to play Rock, Paper, Scissors!', '').toLowerCase();
     if (begin === 'yes') {
-        alert(`Welcome to a nice, friendly, barebones version of Rock, Paper, Scissors ^_^ Please follow the prompts and enjoy the game, it will be played over 5 rounds, feel free to keep going. Current games won is ${playerScore} and ${computerScore} for the computer.`)
+        alert(`Welcome to a nice, friendly, barebones version of Rock, Paper, Scissors ^_^ Please follow the prompts and enjoy the game, it will be played over 5 rounds, feel free to keep going. Current games won are ${playerScore} and ${computerScore} for the computer.`)
         playGame();
     } else {
         alert('Maybe next time ^_^');
@@ -81,9 +81,11 @@ for (i = 0; i < 1;) {
             }
         }
         else if (playerWins > computerWins) {
+            playerScore ++;
             alert(`You win!!! Score was ${playerWins}-${computerWins}`);
         }
         else if (playerWins < computerWins) {
+            computerScore ++;
             alert(`Computer wins, muahahahaha, I wonder if the game is rigged? Just joking, score was ${computerWins}-${playerWins}`);
         }
         // Put this in just in case something goes awry
