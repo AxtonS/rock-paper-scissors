@@ -59,8 +59,9 @@ paperButton.onclick = () => playRound('paper');
 
 const scissorsButton = document.querySelector('#scissors');
 scissorsButton.onclick = () => playRound('scissors');
+
 function finalScore() {
-    if (playerScore >= 5 || computerScore >= 5) {
+    if (playerScore == 5 || computerScore == 5) {
         if (playerScore === computerScore) {
             if (playerScore === 1) {
                 message.textContent = `You both got ${playerScore} point, nobody wins, oh well.`;
@@ -80,6 +81,8 @@ function finalScore() {
             message.textContent = 'An unexpected error hath occured, let\s try this again';
         }
         score.textContent = `Make another selection to begin a new game`;
+        playerScore = 0;
+        computerScore = 0;
     }
 }
 
