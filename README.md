@@ -9,4 +9,6 @@ Alternatively can use switch statements for readability, will change that when I
 
 -----------------------------------------------------------------------------------------------------
 
-Started adding a UI with interactive functionality.
+Second version I added an interactive UI but didn't change the actual game logic to a switch statement yet.
+
+I learned how to add event listeners to html elements and push functions through them.
