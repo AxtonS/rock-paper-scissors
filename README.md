@@ -1,5 +1,6 @@
 # RockPaperScissors
-a simple game of rock, paper, scissors... joyous
+a simple game of rock, paper, scissors... joyous  
+Try it out at: https://axtons.github.io/rock-paper-scissors/  
 
 This is my first little go at javascript.
 
